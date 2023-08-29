@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="" <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+
+</head>
+
+<body>
+  <main class="content-wrapper">
+
+    <header class="header-container">
+      <h1>Notifications <span class="unread-count">3</span></h1>
+      <!-- onclick="toggleNotifications()" später für JS dem Button hinzufügen -->
+      <button class="mark-all-as-read-btn">Mark all as read</button>
+    </header>
+
+
+    <ul>
+      <li class="message-unread">
+        <div class="image-wrapper">
+          <img src="images/avatar-mark-webber.webp" alt="mark">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Mark Webber</span>
+            <span>reacted to your recent post</span><span class="highlight">My first tournament today!</span>
+          </div>
+          <div class="last-online">1m ago</div>
+        </div>
+      </li>
+
+      <li class="message-unread">
+        <div class="image-wrapper">
+          <img src="images/avatar-angela-gray.webp" alt="angela">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Angela Gray</span> <span>followed you</span>
+          </div>
+          <div class="last-online">5m ago</div>
+        </div>
+      </li>
+
+      <li class="message-unread">
+        <div class="image-wrapper">
+          <img src="images/avatar-jacob-thompson.webp" alt="jacob">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Jacob Thompson</span> <span>has joined your group </span> <span class="chess">Chess
+              Club</span>
+          </div>
+          <div class="last-online">1 day ago</div>
+        </div>
+      </li>
+
+      <li class="message">
+        <div class="image-wrapper">
+          <img src="images/avatar-rizky-hasanuddin.webp" alt="rizky">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Rizky Hasanuddin</span> <span>sent you a private message</span>
+          </div>
+          <div class="last-online">5 days ago</div>
+          <span class="message-box">Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now
+            and I'm already having lots of fun and improving my game.</span>
+        </div>
+      </li>
+
+      <li class="message">
+        <div class="image-wrapper">
+          <img src="images/avatar-kimberly-smith.webp" alt="kimberly">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Kimberly Smith</span> <span>commented on your picture</span>
+            <!-- <div class="image-chess">
+              <img src="images/image-chess.webp" alt="picture-chess">
+            </div> -->
+          </div>
+          <div class="last-online">1 week ago</div>
+        </div>
+      </li>
+
+      <li class="message">
+        <div class="image-wrapper">
+          <img src="images/avatar-nathan-peterson.webp" alt="nathan">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Nathan Peterson</span> <span>reacted to your recent post
+              <span class="highlight"> 5 end-game strategies to increase your win rate</span> </span>
+          </div>
+          <div class="last-online">2 weeks ago</div>
+        </div>
+      </li>
+
+      <li class="message">
+        <div class="image-wrapper">
+          <img src="images/avatar-anna-kim.webp" alt="anna">
+        </div>
+        <div class="user-info">
+          <div class="user-name-and-action">
+            <span class="user-name">Anna Kim</span> left the group <span class="chess">Chess Club</span>
+          </div>
+          <div class="last-online">2 weeks ago</div>
+        </div>
+      </li>
+
+    </ul>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend
+          Mentor</a>.
+        Coded by <a href="#">Julia Huchthausen</a>.
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
