@@ -79,7 +79,7 @@ body {
 .message-unread {
   border-radius: 10px;
   display: grid;
-  grid-template-columns: auto 4fr 0.5fr; 
+  grid-template-columns: max-content 4fr max-content; 
   grid-template-rows: 2fr;
   gap: 10px;
   background-color: var(--color_2_very_light_grayish_blue);
@@ -90,7 +90,7 @@ body {
 .message {
   border-radius: 10px;
   display: grid;
-  grid-template-columns: auto 4fr 0.5fr; 
+  grid-template-columns: max-content 4fr max-content; 
   grid-template-rows: 2fr;
   gap: 10px;
   color: var(--color_6_dark_grayish_blue);
@@ -110,11 +110,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
-}
-
-.image-chess {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .user-name-and-action {
@@ -153,6 +148,15 @@ body {
   padding: 12px 12px;
   margin-top: 15px;
   margin-left: 10px;
+}
+
+.dot{
+  display: inline-block;
+  background-color: var(--color_8_red);
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  margin-left: 0.5rem;
 }
 
 /* footer */
