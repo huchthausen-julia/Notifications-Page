@@ -74,7 +74,10 @@ body {
     border: none;
     cursor: pointer; 
   }
-  
+
+  .mark-all-as-read-btn:focus {
+    color: var(--color_9_blue);
+  }
 
 .message-unread {
   border-radius: 10px;
@@ -87,6 +90,11 @@ body {
   padding: 15px;
 }
 
+.message-unread:hover {
+  background-color: var(--color_3_light_grayish_blue_1);
+  transition: background-color 0.3s ease;
+}
+
 .message {
   border-radius: 10px;
   display: grid;
@@ -96,6 +104,11 @@ body {
   color: var(--color_6_dark_grayish_blue);
   margin-bottom: 10px;
   padding: 15px;
+}
+
+.message:hover {
+  background-color: var(--color_3_light_grayish_blue_1);
+  transition: background-color 0.3s ease;
 }
 
 .image-wrapper img {
@@ -158,6 +171,7 @@ body {
   border-radius: 50%;
   margin-left: 0.5rem;
 }
+
 
 /* footer */
 .attribution {
